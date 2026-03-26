@@ -894,10 +894,96 @@
     .hero-right { height: 50vw; }
     .hero-big-text { display: none; }
     .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
-    .products-grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
     nav { display: none; }
     .delivery-bar { gap: 1.5rem; }
     .modal { padding: 2rem; }
+
+    /* ===== COMPACT MOBILE CATALOG ===== */
+    .catalog { padding: 3rem 3vw; }
+    .section-header { margin-bottom: 2rem; }
+    .section-eyebrow { font-size: 0.6rem; margin-bottom: 0.5rem; }
+    .section-title { font-size: 1.8rem; }
+
+    .products-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.6rem;
+    }
+
+    .product-image-wrapper {
+      aspect-ratio: 3/4;
+    }
+
+    .product-info {
+      padding: 0.6rem 0.7rem 0.8rem;
+    }
+
+    .product-category {
+      font-size: 0.55rem;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.15rem;
+    }
+
+    .product-name {
+      font-size: 0.95rem;
+      margin-bottom: 0.15rem;
+      line-height: 1.15;
+    }
+
+    .product-desc {
+      display: none;
+    }
+
+    .product-manager-note {
+      display: none;
+    }
+
+    .product-price {
+      font-size: 1.15rem;
+    }
+
+    .product-footer-top {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.4rem;
+    }
+
+    .product-footer-btns {
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .add-btn {
+      padding: 0.55rem 0.6rem;
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+    }
+
+    .manager-btn {
+      padding: 0.5rem 0.6rem;
+      font-size: 0.58rem;
+      letter-spacing: 0.06em;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .product-badge {
+      top: 6px;
+      left: 6px;
+      font-size: 0.5rem;
+      padding: 0.2rem 0.4rem;
+    }
+
+    .product-thumbs { display: none; }
+    .product-arrow { display: none; }
+
+    .product-card:hover {
+      transform: none;
+      box-shadow: 0 2px 20px rgba(44,31,20,0.06);
+    }
   }
 
   .tg-hint {
